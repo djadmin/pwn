@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hijacked</title>
+		<link rel="stylesheet" href="styles/style.css">
+		<script type="text/javascript" src="scripts/content.js"></script>
+		<script>
+		  alert("XSS");
+		  alert(document.cookie);
+		  console.log(document.location);
+		  console.log(document.cookie);
+		  console.log("XSSed");
+		  
+		</script>
+	</head>
+	<body>
+		<div id="main">
+			<img align="middle" src="images/hijacked.jpg" />
+		</div>
+	</body>
+</html>
