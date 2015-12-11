@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Referer - Infosec</title>
+		<style>
+			body {
+				background-color: #222;
+			}
+			#main {
+				font-size: 50px;
+				text-align: center;
+				color: #ABABAB;
+				line-height: 200px;
+				font-family: monospace;
+			}
+			#ref {
+				font-size: 32px;
+				display: block;
+				color: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="main">
+			What is my Referer?
+			<span id="ref"></span>
+		</div>
+		<script type="text/javascript">
+			var ref = document.referer;
+			document.getElementById('ref').innerText = ref ? ref : 'No Referer!';
+		</script>
+	</body>
+</html>
