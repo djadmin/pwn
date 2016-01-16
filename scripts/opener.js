@@ -1,3 +1,3 @@
 (function(){
-	window.opener && window.opener.location.replace('scam.html');
+	window.opener && window.opener.location.replace('../scam.html');
 })();
