@@ -20,7 +20,7 @@
 	}
 
 	// Set default value
-	setEditorValue(decode(document.URL));
+	setEditorValue(encode(document.URL));
 
 	var decoder = document.getElementById('btn-decode');
 	var encoder = document.getElementById('btn-encode');
