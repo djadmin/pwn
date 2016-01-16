@@ -41,3 +41,45 @@ body {
 	opacity: 0.7;
 	border-color: #000;
 }
+.container {
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 120px;
+}
+
+.list-item {
+	text-align: center;
+    font-size: 1.2em;
+    font-family: 'courier new', 'georgia', 'arial';
+    color: #ABABAB;
+    border-top: 1px solid rgba(238, 238, 238, 0.11);
+    padding: 10px;
+}
+.list-item:nth-child(1) {
+	border: none;
+}
+
+footer {
+	position: fixed;
+    bottom: 0;
+    color: #ABABAB;
+    width: 100%;
+    text-align: center;
+    font-family: 'courier new', 'georgia', 'arial';
+}
+
+footer div.inner {
+	padding: 10px;
+}
+footer a{
+	color: #ABABAB;
+}
+footer img {
+	border-radius: 50%;
+    margin: 0 5px;
+    margin-bottom: -2px;
+}
+footer span {
+	margin: 5px;
+}
