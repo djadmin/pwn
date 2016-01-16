@@ -1,6 +1,6 @@
 (function() {
 	'use strict';
-
+	var isBase64 = window.encoding === 'base64';
 	function setEditorValue(val) {
 		var editor = document.getElementById('editor');
 		editor.value = val;
@@ -11,12 +11,12 @@
 		return editor.value || '';
 	}
 
-	function decode(url) {
-		return decodeURIComponent(url);
+	function decode(data) {
+		return isBase64 ? atob(data) : decodeURIComponent(data);
 	}
 
-	function encode(url) {
-		return encodeURIComponent(url);
+	function encode(data) {
+		return isBase64 ? btoa(data) : encodeURIComponent(data);
 	}
 
 	// Set default value
