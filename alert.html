@@ -3,14 +3,13 @@
 	<head>
 		<title>Hijacked</title>
 		<link rel="stylesheet" href="styles/style.css">
-		<script type="text/javascript" src="scripts/content.js"></script>
+		<!--<script type="text/javascript" src="scripts/content.js"></script>-->
 		<script>
-		  alert("XSS");
+		  alert("It's an XSS!");
 		  alert(document.cookie);
 		  console.log(document.location);
 		  console.log(document.cookie);
 		  console.log("XSSed");
-		  
 		</script>
 	</head>
 	<body>
