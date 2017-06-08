@@ -5,7 +5,7 @@
 		<link rel="stylesheet" href="styles/style.css">
 		<!--<script type="text/javascript" src="scripts/content.js"></script>-->
 		<script>
-		  alert("It's an XSS!");
+		  alert("It's an XSS! " + document.location.hostname);
 		  //alert(document.cookie);
 		  console.log(document.location);
 		  console.log(document.cookie);
