@@ -2,7 +2,20 @@
 <html>
 	<head>
 		<title>Hijacked</title>
-		<link rel="stylesheet" href="styles/style.css">
+		<!--<link rel="stylesheet" href="styles/style.css">-->
+		<style>
+			body {
+				background-color: #222222;
+			}
+
+			#main {
+				font-size: 50px;
+				text-align: center;
+				color: #fff;
+				line-height: 650px;
+				font-family: monospace;
+			}
+		</stlye>
 		<!--<script type="text/javascript" src="scripts/content.js"></script>-->
 		<script>
 		  alert("It's an XSS on " + document.location.hostname);
